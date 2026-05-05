@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Program Explorer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">Program Explorer</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#quiz">Program Decider</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://polytechnic.purdue.edu/academic-areas/acc#undergraduate">More Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://polytechnic.purdue.edu" target="_blank">Purdue</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<header class="text-center p-5 bg-light">
+  <h1>Applied & Creative Computing Program Explorer</h1>
+  <p>Explore Purdue programs, courses, and careers.</p>
+</header>
+
+
+<!-- PROGRAMS -->
+<section id="programs" class="container mt-5">
+
+  <h2 class="text-center mb-4">Programs</h2>
+
+  <div class="row">
+
+    <!-- CARD 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center h-100">
+        <img src="images/cybersecurity-degree-purdue.jpg" class="card-img-top" alt="Cybersecurity program">
+        <div class="card-body d-flex flex-column">
+          <h5>Cybersecurity</h5>
+          <p>Learn to defend networks and data through hands-on labs in forensics, cryptography, risk assessment, and incident response.</p>
+
+          <div class="mt-auto">
+            <button class="btn btn-warning m-1" data-bs-toggle="modal" data-bs-target="#courses1">Courses</button>
+            <button class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#careers1">Careers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center h-100">
+        <img src="images/web-programming-major-purdue.jpg" class="card-img-top" alt="Web Programming program">
+        <div class="card-body d-flex flex-column">
+          <h5>Web Programming &amp; Design</h5>
+          <p>Build user-centered web experiences using front-end, back-end, UX, accessibility, and modern development tools.</p>
+
+          <div class="mt-auto">
+            <button class="btn btn-warning m-1" data-bs-toggle="modal" data-bs-target="#courses2">Courses</button>
+            <button class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#careers2">Careers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center h-100">
+        <img src="images/data-analytics-major-purdue.jpg" class="card-img-top" alt="Data Analytics program">
+        <div class="card-body d-flex flex-column">
+          <h5>Data Analytics</h5>
+          <p>Turn raw data into insights with programming, databases, analytics, visualization, statistics, and applied machine learning.</p>
+
+          <div class="mt-auto">
+            <button class="btn btn-warning m-1" data-bs-toggle="modal" data-bs-target="#courses3">Courses</button>
+            <button class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#careers3">Careers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center h-100">
+        <img src="images/network-engineering-technology-degree-purdue.jpg" class="card-img-top" alt="Networking program">
+        <div class="card-body d-flex flex-column">
+          <h5>Networking</h5>
+          <p>Design and manage enterprise networks and IT infrastructure with hands-on work in routing, wireless, UNIX, servers, and security.</p>
+
+          <div class="mt-auto">
+            <button class="btn btn-warning m-1" data-bs-toggle="modal" data-bs-target="#courses4">Courses</button>
+            <button class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#careers4">Careers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center h-100">
+        <img src="images/ux-design-major-purdue.jpg" class="card-img-top" alt="UX Design program">
+        <div class="card-body d-flex flex-column">
+          <h5>UX Design</h5>
+          <p>Create intuitive, accessible digital experiences through user research, interaction design, prototyping, and usability testing.</p>
+
+          <div class="mt-auto">
+            <button class="btn btn-warning m-1" data-bs-toggle="modal" data-bs-target="#courses5">Courses</button>
+            <button class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#careers5">Careers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center h-100">
+        <img src="images/game-design-major-purdue.jpg" class="card-img-top" alt="Game Development program">
+        <div class="card-body d-flex flex-column">
+          <h5>Game Development</h5>
+          <p>Combine programming, graphics, and design to build interactive games and simulations with engines, 3D workflows, and gameplay systems.</p>
+
+          <div class="mt-auto">
+            <button class="btn btn-warning m-1" data-bs-toggle="modal" data-bs-target="#courses6">Courses</button>
+            <button class="btn btn-dark m-1" data-bs-toggle="modal" data-bs-target="#careers6">Careers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!--MODALS -->
+
+<!-- Courses and Careers -->
+
+<div class="modal fade" id="courses1" tabindex="-1" aria-labelledby="courses1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courses1Label">Cybersecurity Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CNIT 15501&emsp;Introduction to Software Development Concepts</li>
+          <li class="list-group-item">CNIT 17600&emsp;Information Technology Architectures</li>
+          <li class="list-group-item">CNIT 18200&emsp;System and Organizational Security</li>
+          <li class="list-group-item">CNIT 24200&emsp;System Administration</li>
+          <li class="list-group-item">CNIT 25501&emsp;Object-Oriented Programming Introduction</li>
+          <li class="list-group-item">CNIT 27000&emsp;Cybersecurity Fundamentals I</li>
+          <li class="list-group-item">CNIT 27100&emsp;Cybersecurity Fundamentals II</li>
+          <li class="list-group-item">CNIT 27200&emsp;Database Fundamentals</li>
+          <li class="list-group-item">CNIT 32300&emsp;Basic Cyberforensics</li>
+          <li class="list-group-item">CNIT 34000&emsp;UNIX Administration</li>
+          <li class="list-group-item">CNIT 34220&emsp;Network Administration</li>
+          <li class="list-group-item">CNIT 34400&emsp;Network Engineering Fundamentals</li>
+          <li class="list-group-item">CNIT 37000&emsp;Introduction to Cryptography</li>
+          <li class="list-group-item">CNIT 37100&emsp;Cyberlaw and Ethics</li>
+          <li class="list-group-item">CNIT 42200&emsp;Cyber Criminology</li>
+          <li class="list-group-item">CNIT 45500&emsp;Network Security</li>
+          <li class="list-group-item">CNIT 47000&emsp;Incident Response Management</li>
+          <li class="list-group-item">CNIT 47100&emsp;Vulnerability Analysis and Testing</li>
+          <li class="list-group-item">CNIT 48000&emsp;Managing Information Technology Projects</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="careers1" tabindex="-1" aria-labelledby="careers1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careers1Label">Cybersecurity Careers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cybersecurity Analyst</li>
+          <li class="list-group-item">Security Engineer</li>
+          <li class="list-group-item">Digital Forensics Analyst</li>
+          <li class="list-group-item">IT Security Consultant</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="courses2" tabindex="-1" aria-labelledby="courses2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courses2Label">Web Programming Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CGT 11505&emsp;Scripting and Computational Thinking</li>
+          <li class="list-group-item">CGT 11600&emsp;Geometric Modeling for Visualization and Communication</li>
+          <li class="list-group-item">CGT 11800&emsp;Fundamentals of Imaging Technology</li>
+          <li class="list-group-item">CGT 14100&emsp;Internet Foundations Technologies and Development</li>
+          <li class="list-group-item">CGT 17208&emsp;User Experience Design Studio I: Fundamentals</li>
+          <li class="list-group-item">CGT 25001&emsp;Computer Graphics Professional Practices I</li>
+          <li class="list-group-item">CGT 25300&emsp;Front-End Web Development</li>
+          <li class="list-group-item">CGT 35300&emsp;Principles of Interactive and Dynamic Media</li>
+          <li class="list-group-item">CGT 35600&emsp;Web Programming, Development and Data Integration</li>
+          <li class="list-group-item">CGT 37000&emsp;Interactive Data Visualization</li>
+          <li class="list-group-item">CGT 41101&emsp;Contemporary Problems in Applied Computer Graphics I</li>
+          <li class="list-group-item">CGT 41201&emsp;Contemporary Problems in Applied Computer Graphics II</li>
+          <li class="list-group-item">CGT 45001&emsp;Computer Graphics Professional Practices II</li>
+          <li class="list-group-item">CGT 45600&emsp;Advanced Web Programming, Development and Data Integration</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="careers2" tabindex="-1" aria-labelledby="careers2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careers2Label">Web Programming Careers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Web Developer</li>
+          <li class="list-group-item">UI/UX Designer</li>
+          <li class="list-group-item">Front-End Developer</li>
+          <li class="list-group-item">Web Architect</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="courses3" tabindex="-1" aria-labelledby="courses3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courses3Label">Data Analytics Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-semibold">Core IT Courses</h6>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item">CNIT 15501&emsp;Introduction to Software Development Concepts</li>
+          <li class="list-group-item">CNIT 17600&emsp;Information Technology Architectures</li>
+          <li class="list-group-item">CNIT 18000&emsp;Introduction to Systems Development</li>
+          <li class="list-group-item">CNIT 24200&emsp;System Administration</li>
+          <li class="list-group-item">CNIT 25501&emsp;Object-Oriented Programming Introduction</li>
+          <li class="list-group-item">CNIT 27000&emsp;Cybersecurity Fundamentals I</li>
+          <li class="list-group-item">CNIT 28000&emsp;Systems Analysis and Design Methods</li>
+          <li class="list-group-item">CNIT 32000&emsp;Policy, Regulation, and Globalization in IT</li>
+          <li class="list-group-item">CNIT 48000&emsp;Managing Information Technology Projects</li>
+        </ul>
+
+        <h6 class="fw-semibold">Data Analytics Courses</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CNIT 27200&emsp;Database Fundamentals</li>
+          <li class="list-group-item">CNIT 32200&emsp;Research Methodology and Design</li>
+          <li class="list-group-item">CNIT 37200&emsp;Database Programming</li>
+          <li class="list-group-item">CNIT 39200&emsp;Enterprise Data Management</li>
+          <li class="list-group-item">CNIT 48200&emsp;Six Sigma Data Quality for Continuous Improvement</li>
+          <li class="list-group-item">CNIT 48300&emsp;Applied Machine Learning</li>
+          <li class="list-group-item">CNIT 48400&emsp;Applications in Data Science</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="careers3" tabindex="-1" aria-labelledby="careers3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careers3Label">Data Analytics Careers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Data Analyst</li>
+          <li class="list-group-item">Data Scientist</li>
+          <li class="list-group-item">Machine Learning Engineer</li>
+          <li class="list-group-item">Business Intelligence Analyst</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="courses4" tabindex="-1" aria-labelledby="courses4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courses4Label">Networking Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CNIT 15501&emsp;Introduction to Software Development Concepts</li>
+          <li class="list-group-item">CNIT 17600&emsp;Information Technology Architectures</li>
+          <li class="list-group-item">CNIT 18000&emsp;Introduction to Systems Development</li>
+          <li class="list-group-item">CNIT 18200&emsp;System and Organizational Security</li>
+          <li class="list-group-item">CNIT 24200&emsp;System Administration</li>
+          <li class="list-group-item">CNIT 25501&emsp;Object-Oriented Programming Introduction</li>
+          <li class="list-group-item">CNIT 27000&emsp;Cybersecurity Fundamentals I</li>
+          <li class="list-group-item">CNIT 27200&emsp;Database Fundamentals</li>
+          <li class="list-group-item">CNIT 31500&emsp;Systems Programming</li>
+          <li class="list-group-item">CNIT 32000&emsp;IT Policy and Globalization</li>
+          <li class="list-group-item">CNIT 34000&emsp;UNIX Administration</li>
+          <li class="list-group-item">CNIT 34220&emsp;Network Administration</li>
+          <li class="list-group-item">CNIT 34400&emsp;Network Engineering Fundamentals</li>
+          <li class="list-group-item">CNIT 34500&emsp;Internetwork Design and Implementation</li>
+          <li class="list-group-item">CNIT 34600&emsp;Wireless Networks</li>
+          <li class="list-group-item">CNIT 41700&emsp;Critical Infrastructure Security</li>
+          <li class="list-group-item">CNIT 43500&emsp;Advanced Network Services</li>
+          <li class="list-group-item">CNIT 44500&emsp;Advanced Routing and Switching</li>
+          <li class="list-group-item">CNIT 44600&emsp;Advanced Wireless Networks</li>
+          <li class="list-group-item">CNIT 45500&emsp;Network Security</li>
+          <li class="list-group-item">CNIT 45600&emsp;Wireless Security and Management</li>
+          <li class="list-group-item">CNIT 48000&emsp;IT Project Management</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="careers4" tabindex="-1" aria-labelledby="careers4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careers4Label">Networking Careers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Network Engineer</li>
+          <li class="list-group-item">Systems Administrator</li>
+          <li class="list-group-item">Cloud Engineer</li>
+          <li class="list-group-item">IT Infrastructure Specialist</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="courses5" tabindex="-1" aria-labelledby="courses5Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courses5Label">UX Design Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CGT 11800&emsp;Fundamentals of Imaging Technology</li>
+          <li class="list-group-item">CGT 14100&emsp;Internet Foundations Technologies and Development</li>
+          <li class="list-group-item">CGT 17207&emsp;UX Design Experience Studio I</li>
+          <li class="list-group-item">CGT 17208&emsp;UX Design Studio I: Fundamentals</li>
+          <li class="list-group-item">CGT 25001&emsp;Computer Graphics Professional Practices I</li>
+          <li class="list-group-item">CGT 27000&emsp;Introduction to Data Visualization</li>
+          <li class="list-group-item">CGT 27108&emsp;UX Design Studio II: Screen</li>
+          <li class="list-group-item">CGT 27207&emsp;UX Design Experience Studio II</li>
+          <li class="list-group-item">CGT 27208&emsp;UX Design Studio III: Cross-Channel</li>
+          <li class="list-group-item">CGT 37108&emsp;UX Design Studio IV: Strategy</li>
+          <li class="list-group-item">CGT 37207&emsp;UX Design Experience Studio III</li>
+          <li class="list-group-item">CGT 37208&emsp;UX Design Studio V: Specialization</li>
+          <li class="list-group-item">CGT 41101&emsp;Contemporary Problems in Applied Computer Graphics I</li>
+          <li class="list-group-item">CGT 41201&emsp;Contemporary Problems in Applied Computer Graphics II</li>
+          <li class="list-group-item">CGT 45001&emsp;Computer Graphics Professional Practices II</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="careers5" tabindex="-1" aria-labelledby="careers5Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careers5Label">UX Design Careers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">UX Designer</li>
+          <li class="list-group-item">UI Designer</li>
+          <li class="list-group-item">User Researcher</li>
+          <li class="list-group-item">Product Designer</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="courses6" tabindex="-1" aria-labelledby="courses6Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courses6Label">Game Development Courses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CGT 10501&emsp;Introduction to Games</li>
+          <li class="list-group-item">CGT 11600&emsp;Geometric Modeling for Visualization and Communication</li>
+          <li class="list-group-item">CGT 11800&emsp;Fundamentals of Imaging Technology</li>
+          <li class="list-group-item">CGT 14100&emsp;Internet Foundations Technologies and Development</li>
+          <li class="list-group-item">CGT 17208&emsp;UX Design Studio I: Fundamentals</li>
+          <li class="list-group-item">CGT 21500&emsp;Computer Graphics Programming I</li>
+          <li class="list-group-item">CGT 24500&emsp;Game Development I: Core Skills &amp; Technologies</li>
+          <li class="list-group-item">CGT 25001&emsp;Computer Graphics Professional Practices I</li>
+          <li class="list-group-item">CGT 25500&emsp;Game Development II: Design &amp; Psychology</li>
+          <li class="list-group-item">CGT 27000&emsp;Introduction to Data Visualization</li>
+          <li class="list-group-item">CGT 36500&emsp;Game Development Practicum</li>
+          <li class="list-group-item">CGT 41101&emsp;Contemporary Problems in Applied Computer Graphics I</li>
+          <li class="list-group-item">CGT 41201&emsp;Contemporary Problems in Applied Computer Graphics II</li>
+          <li class="list-group-item">CGT 45001&emsp;Computer Graphics Professional Practices II</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="careers6" tabindex="-1" aria-labelledby="careers6Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="careers6Label">Game Development Careers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Game Developer</li>
+          <li class="list-group-item">Gameplay Programmer</li>
+          <li class="list-group-item">Technical Artist</li>
+          <li class="list-group-item">Simulation Designer</li>
+          <li class="list-group-item">Environment Artist</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Simple quiz to help students choose a major -->
+<section id="quiz" class="container mt-5">
+  <h2 class="text-center">Don't Know What Program to Choose? Take Our Quiz!</h2>
+
+  <form id="majorQuiz" class="mt-4">
+    <fieldset class="mb-4">
+      <legend class="h5">1. Which kind of work sounds more fun?</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" id="q1a" value="1">
+        <label class="form-check-label" for="q1a">Designing layouts, researching users, and improving usability</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" id="q1b" value="2">
+        <label class="form-check-label" for="q1b">Solving technical problems with systems, code, and troubleshooting</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">2. You prefer projects that are…</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q2" id="q2a" value="1">
+        <label class="form-check-label" for="q2a">Visual, interactive, and focused on how people experience a product</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q2" id="q2b" value="2">
+        <label class="form-check-label" for="q2b">Logic-heavy, focused on performance, reliability, and correctness</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">3. When you think about technology, you’re most curious about…</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q3" id="q3a" value="1">
+        <label class="form-check-label" for="q3a">Building websites/apps that look great and feel easy to use</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q3" id="q3b" value="2">
+        <label class="form-check-label" for="q3b">Working with data, patterns, and analysis to make decisions</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">4. If you had to pick a “behind the scenes” focus, you’d choose…</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q4" id="q4a" value="1">
+        <label class="form-check-label" for="q4a">Creating interactive experiences (games, simulations, media)</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q4" id="q4b" value="2">
+        <label class="form-check-label" for="q4b">Networking and infrastructure (servers, routing, wireless, cloud)</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">5. Which statement fits you better?</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q5" id="q5a" value="1">
+        <label class="form-check-label" for="q5a">I like creating and improving things people use every day</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q5" id="q5b" value="2">
+        <label class="form-check-label" for="q5b">I like protecting systems and investigating how attacks happen</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">6. Which class topic sounds most interesting?</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q6" id="q6a" value="1">
+        <label class="form-check-label" for="q6a">Accessibility, UI patterns, and designing for real users</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q6" id="q6b" value="2">
+        <label class="form-check-label" for="q6b">Operating systems, servers, and how systems work under the hood</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">7. When you solve a problem, you usually start by…</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q7" id="q7a" value="1">
+        <label class="form-check-label" for="q7a">Sketching ideas, prototyping, and testing what feels right</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q7" id="q7b" value="2">
+        <label class="form-check-label" for="q7b">Breaking it into steps, debugging, and measuring results</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">8. Which kind of tools would you rather use?</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q8" id="q8a" value="1">
+        <label class="form-check-label" for="q8a">Design and front-end tools (wireframes, HTML/CSS, UI kits)</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q8" id="q8b" value="2">
+        <label class="form-check-label" for="q8b">Technical tools (databases, scripting, command line, network tools)</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">9. Which outcome would make you most proud?</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q9" id="q9a" value="1">
+        <label class="form-check-label" for="q9a">A polished experience people love using</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q9" id="q9b" value="2">
+        <label class="form-check-label" for="q9b">A system that's secure, reliable, and handles real-world scale</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="mb-4">
+      <legend class="h5">10. In a group project, you're more likely to volunteer for…</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10" id="q10a" value="1">
+        <label class="form-check-label" for="q10a">Designing the interface and making the experience feel smooth</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10" id="q10b" value="2">
+        <label class="form-check-label" for="q10b">Building the logic, data, and infrastructure behind it</label>
+      </div>
+    </fieldset>
+
+    <button type="button" class="btn btn-warning mt-2" onclick="submitQuiz()">Submit</button>
+  </form>
+
+  <h3 id="result"></h3>
+</section>
+
+<script>
+// Computes scores and shows a recommendation based on quiz answers.
+function submitQuiz() {
+
+  const questionNames = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"];
+  let score = 0;
+
+  // Validate: all questions must be answered before scoring.
+  for (const name of questionNames) {
+    const selected = document.querySelector(`input[name="${name}"]:checked`);
+    if (!selected) {
+      document.getElementById("result").innerText = "Please answer all 10 questions.";
+      return;
+    }
+    score += Number(selected.value);
+  }
+  const scaledScore = score / 2;
+
+  let major = "";
+  let description = "";
+
+  // Convert the score into a program recommendation.
+  switch (true) {
+    case scaledScore <= 5.5:
+      major = "UX Design";
+      description = "Best fit if you prefer user research, design, and usability.";
+      break;
+    case scaledScore <= 6.5:
+      major = "Web Programming & Design";
+      description = "Best fit if you like building websites/apps with both coding and design.";
+      break;
+    case scaledScore <= 7.5:
+      major = "Game Development";
+      description = "Best fit if you want a creative + technical path building interactive experiences.";
+      break;
+    case scaledScore <= 8.5:
+      major = "Data Analytics";
+      description = "Best fit if you enjoy working with data, analysis, and visualization.";
+      break;
+    case scaledScore <= 9.5:
+      major = "Networking";
+      description = "Best fit if you're interested in infrastructure, systems, and networks.";
+      break;
+    case scaledScore <= 10:
+      major = "Cybersecurity";
+      description = "Best fit if you want to defend systems, investigate incidents, and manage risk.";
+      break;
+    default:
+      major = "other major";
+      description = "Your answers were mixed — review the program cards and explore courses/careers.";
+  }
+
+  document.getElementById("result").innerText = `Your score: ${score}/20 — Recommended major: ${major}. ${description}`;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

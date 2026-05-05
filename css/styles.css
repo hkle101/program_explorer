@@ -1,0 +1,53 @@
+/* COMPILED CSS */
+
+/* NAVBAR */
+.navbar.bg-dark {
+  background-color: #000000 !important;
+}
+
+.navbar .navbar-brand {
+  color: #CFB991 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #CFB991 !important;
+}
+
+/* BUTTONS */
+.btn-warning {
+  background-color: #CFB991;
+  border-color: #CFB991;
+  color: #000000;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+  filter: brightness(0.95);
+}
+
+.btn-dark {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  filter: brightness(1.15);
+}
+
+header.bg-light {
+  border-bottom: 6px solid #CFB991;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  color: #000000;
+}
+
+#result {
+  margin-top: 1rem;
+  color: #000000;
+}
